@@ -200,3 +200,6 @@ details.menu[open] summary{background:#1d1b22}
 .arch img,.portrait img{height:auto}
 .arch .seal img{aspect-ratio:auto;object-fit:contain;border-radius:0;width:50px;height:auto;position:static}
 @media(max-width:900px){.arch .seal img{width:40px}}
+
+/* deixa espaço para o selo do Netlify no canto */
+.fab{bottom:78px}
