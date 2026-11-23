@@ -90,7 +90,8 @@ details p{margin:0 0 14px;font-size:15px;color:var(--soft)}
 .news .btn{margin-top:0}
 .news .nh{font:600 13px/1 Montserrat,sans-serif;letter-spacing:.2em;color:#d8c08a;text-align:center;margin:6px 0 16px}
 .news .nh::after{display:none}
-.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:18px}
+.tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:7px;margin-bottom:18px}
+.tabs button{flex:1 1 30%}
 .tabs button{font:600 13px/1 Montserrat,sans-serif;padding:11px 4px;border-radius:999px;border:1px solid #5a4b31;background:transparent;color:#d8c08a;cursor:pointer}
 .tabs button[aria-selected="true"]{background:var(--grad);color:#111015;border-color:transparent}
 .news .np{display:none}.news .np.on{display:block}
@@ -223,6 +224,8 @@ footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
         <button role="tab" id="nt1" aria-controls="np1" aria-selected="true">Bancário</button>
         <button role="tab" id="nt2" aria-controls="np2" aria-selected="false">INSS</button>
         <button role="tab" id="nt3" aria-controls="np3" aria-selected="false">Família</button>
+        <button role="tab" id="nt4" aria-controls="np4" aria-selected="false">Interdição</button>
+        <button role="tab" id="nt5" aria-controls="np5" aria-selected="false">Autismo</button>
       </div>
       <div class="np on" id="np1" role="tabpanel" aria-labelledby="nt1">
         <span class="tag">STJ · TEMA 929</span>
@@ -259,6 +262,30 @@ footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
         </ul>
         <p class="src">STJ, Terceira Turma (agosto de 2026) e Informativo de Jurisprudência nº 905 (outubro de 2026). Cada caso depende de análise.</p>
         <a class="btn gold" href="https://wa.me/5581982252497?text=Ol%C3%A1%2C%20Dr.%20Thiago%21%20Vim%20pelo%20site.%20Quero%20saber%20se%20as%20decis%C3%B5es%20recentes%20do%20STJ%20sobre%20pens%C3%A3o%20aliment%C3%ADcia%20se%20aplicam%20ao%20meu%20caso." target="_blank" rel="noopener">Quero saber se se aplica ao meu caso</a>
+      </div>
+      <div class="np" id="np4" role="tabpanel" aria-labelledby="nt4">
+        <span class="tag">INTERDIÇÃO · CURATELA</span>
+        <h3>Proteger um familiar sem tirar a voz dele</h3>
+        <p class="lead">Hoje a lei protege quem precisa de ajuda para cuidar da vida civil, mas preserva ao máximo a autonomia da pessoa.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>A curatela é sob medida.</b> Ela alcança atos de patrimônio e negócios, como banco, contratos e o benefício do INSS. Direitos como votar, casar, trabalhar e decidir sobre a própria saúde continuam com a pessoa.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Existe uma opção mais leve.</b> Na tomada de decisão apoiada, a própria pessoa escolhe duas pessoas de confiança para ajudá-la a decidir, sem perder a capacidade.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Precisa resolver algo com urgência?</b> Em caso justificado, o juiz pode nomear um curador provisório logo no início do processo, por exemplo para cuidar da aposentadoria de um familiar com Alzheimer.</li>
+        </ul>
+        <p class="src">Estatuto da Pessoa com Deficiência (Lei 13.146/2015, art. 85), Código Civil (art. 1.783-A) e Código de Processo Civil (art. 749). Cada caso depende de análise.</p>
+        <a class="btn gold" href="https://wa.me/5581982252497?text=Ol%C3%A1%2C%20Dr.%20Thiago%21%20Vim%20pelo%20site.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20interdi%C3%A7%C3%A3o%20ou%20curatela%20de%20um%20familiar." target="_blank" rel="noopener">Quero saber se se aplica ao meu caso</a>
+      </div>
+      <div class="np" id="np5" role="tabpanel" aria-labelledby="nt5">
+        <span class="tag">STJ · TEMA 1.295</span>
+        <h3>Plano de saúde não pode limitar as terapias do autismo</h3>
+        <p class="lead">Em decisão que vale para todo o país, o STJ definiu que a quantidade de terapias é decisão de quem trata, e não do plano.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Sem limite de sessões.</b> É abusivo o plano limitar o número de sessões de psicologia, fonoaudiologia, terapia ocupacional e fisioterapia prescritas para pessoa com TEA.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Vale o que o profissional prescreveu.</b> A cláusula que limita é nula, mesmo que esteja escrita no contrato.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>O plano negou ou cortou sessões?</b> Guarde a prescrição, a negativa por escrito ou o número de protocolo do atendimento.</li>
+        </ul>
+        <p class="src">STJ, Segunda Seção, Tema 1.295 dos recursos repetitivos, julgado em 11/3/2026 e com acórdão publicado em 17/6/2026. Cada caso depende de análise.</p>
+        <a class="btn gold" href="https://wa.me/5581982252497?text=Ol%C3%A1%2C%20Dr.%20Thiago%21%20Vim%20pelo%20site.%20O%20plano%20de%20sa%C3%BAde%20est%C3%A1%20limitando%20ou%20negando%20terapias%20para%20autismo%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener">Quero saber se se aplica ao meu caso</a>
       </div>
     </div>
   </section>
