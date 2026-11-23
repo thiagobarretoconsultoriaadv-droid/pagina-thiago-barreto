@@ -88,6 +88,14 @@ details p{margin:0 0 14px;font-size:15px;color:var(--soft)}
 .news li svg{position:absolute;left:0;top:.15em;width:20px;height:20px;color:#d8c08a}
 .news .src{font-size:12px;color:#9a917f;border-top:1px solid #2e2920;padding-top:12px;margin:0 0 14px}
 .news .btn{margin-top:0}
+.news .nh{font:600 13px/1 Montserrat,sans-serif;letter-spacing:.2em;color:#d8c08a;text-align:center;margin:6px 0 16px}
+.news .nh::after{display:none}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:18px}
+.tabs button{font:600 13px/1 Montserrat,sans-serif;padding:11px 4px;border-radius:999px;border:1px solid #5a4b31;background:transparent;color:#d8c08a;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--grad);color:#111015;border-color:transparent}
+.news .np{display:none}.news .np.on{display:block}
+.news .np h3{margin-top:12px}
+.nojs .news .np{display:block;margin-bottom:26px}
 .check{border:1px solid var(--gold2);border-radius:16px;padding:20px 18px;background:linear-gradient(160deg,#f3e7cc,var(--card) 65%);box-shadow:0 10px 30px -18px rgba(80,60,20,.35)}
 .check h3{font:700 19px/1.25 Montserrat,sans-serif;margin:0 0 6px;text-align:center;text-wrap:balance}
 .check>p{margin:0 0 14px;text-align:center;font-size:15px;color:var(--soft)}
@@ -210,16 +218,48 @@ footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
 
   <section aria-labelledby="t-stj">
     <div class="news">
-      <span class="tag">NOVIDADE · STJ · TEMA 929</span>
-      <h3 id="t-stj">O STJ reforçou o direito à devolução em dobro</h3>
-      <p class="lead">Em decisão que vale para todo o país, o Superior Tribunal de Justiça definiu como fica a devolução em dobro do que foi cobrado indevidamente do consumidor.</p>
-      <ul>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Não é preciso provar má-fé do banco.</b> Basta que a cobrança indevida vá contra a boa-fé que se espera de quem cobra.</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Descontos antigos também entram.</b> Caiu o limite que só permitia a devolução em dobro de cobranças feitas a partir de 2021, respeitado o prazo para entrar com a ação.</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Reclamou e o banco ignorou?</b> A falta de resposta a uma reclamação feita antes conta a seu favor. Guarde protocolos, e-mails e prints.</li>
-      </ul>
-      <p class="src">STJ, Corte Especial, REsp 1.963.770/CE, acórdão publicado em 3/11/2026. Há exceções, como o engano justificável, e cada caso depende de análise.</p>
-      <a class="btn gold" href="https://wa.me/5581982252497?text=Ol%C3%A1%2C%20Dr.%20Thiago%21%20Vim%20pelo%20site.%20Quero%20saber%20se%20a%20decis%C3%A3o%20do%20STJ%20sobre%20devolu%C3%A7%C3%A3o%20em%20dobro%20%28Tema%20929%29%20se%20aplica%20ao%20meu%20caso." target="_blank" rel="noopener">Quero saber se se aplica ao meu caso</a>
+      <h2 class="nh" id="t-stj">NOVIDADES DOS TRIBUNAIS</h2>
+      <div class="tabs" role="tablist">
+        <button role="tab" id="nt1" aria-controls="np1" aria-selected="true">Bancário</button>
+        <button role="tab" id="nt2" aria-controls="np2" aria-selected="false">INSS</button>
+        <button role="tab" id="nt3" aria-controls="np3" aria-selected="false">Família</button>
+      </div>
+      <div class="np on" id="np1" role="tabpanel" aria-labelledby="nt1">
+        <span class="tag">STJ · TEMA 929</span>
+        <h3>O STJ reforçou o direito à devolução em dobro</h3>
+        <p class="lead">Em decisão que vale para todo o país, o Superior Tribunal de Justiça definiu como fica a devolução em dobro do que foi cobrado indevidamente do consumidor.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Não é preciso provar má-fé do banco.</b> Basta que a cobrança indevida vá contra a boa-fé que se espera de quem cobra.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Descontos antigos também entram.</b> Caiu o limite que só permitia a devolução em dobro de cobranças feitas a partir de 2021, respeitado o prazo para entrar com a ação.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Reclamou e o banco ignorou?</b> A falta de resposta a uma reclamação feita antes conta a seu favor. Guarde protocolos, e-mails e prints.</li>
+        </ul>
+        <p class="src">STJ, Corte Especial, REsp 1.963.770/CE, acórdão publicado em 3/11/2026. Há exceções, como o engano justificável, e cada caso depende de análise.</p>
+        <a class="btn gold" href="https://wa.me/5581982252497?text=Ol%C3%A1%2C%20Dr.%20Thiago%21%20Vim%20pelo%20site.%20Quero%20saber%20se%20a%20decis%C3%A3o%20do%20STJ%20sobre%20devolu%C3%A7%C3%A3o%20em%20dobro%20%28Tema%20929%29%20se%20aplica%20ao%20meu%20caso." target="_blank" rel="noopener">Quero saber se se aplica ao meu caso</a>
+      </div>
+      <div class="np" id="np2" role="tabpanel" aria-labelledby="nt2">
+        <span class="tag">STJ · TEMA 1.352</span>
+        <h3>Parou de contribuir? A proteção do INSS pode durar até 3 anos</h3>
+        <p class="lead">O STJ ampliou, em decisão que vale para todo o país, o tempo em que o trabalhador continua protegido pelo INSS mesmo sem pagar.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Mais de 10 anos de contribuição?</b> Quem tem 120 contribuições sem perder a qualidade de segurado ganha 12 meses extras de proteção, e agora pode usar esse prazo extra mais de uma vez.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Até 36 meses sem pagar.</b> Somando o desemprego involuntário comprovado, a cobertura pode chegar a 3 anos.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Vale para auxílio-doença, salário-maternidade e pensão por morte.</b> O INSS negou porque a pessoa “não era mais segurada”? Vale rever, inclusive no caso de um familiar que faleceu desempregado.</li>
+        </ul>
+        <p class="src">STJ, Primeira Seção, Tema 1.352 dos recursos repetitivos, novembro de 2026. Cada caso depende da análise do histórico de contribuições (CNIS).</p>
+        <a class="btn gold" href="https://wa.me/5581982252497?text=Ol%C3%A1%2C%20Dr.%20Thiago%21%20Vim%20pelo%20site.%20Quero%20saber%20se%20a%20decis%C3%A3o%20do%20STJ%20sobre%20o%20per%C3%ADodo%20de%20gra%C3%A7a%20do%20INSS%20%28Tema%201.352%29%20se%20aplica%20ao%20meu%20caso." target="_blank" rel="noopener">Quero saber se se aplica ao meu caso</a>
+      </div>
+      <div class="np" id="np3" role="tabpanel" aria-labelledby="nt3">
+        <span class="tag">STJ · FAMÍLIA</span>
+        <h3>Pensão alimentícia não é para sempre do mesmo jeito</h3>
+        <p class="lead">Decisões recentes do STJ reforçam que a pensão acompanha a realidade de quem paga e de quem recebe.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Mudou a renda?</b> A pensão pode ser revista, para mais ou para menos, sempre que houver mudança comprovada na situação financeira.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Pensão para ex-cônjuge, em regra, tem prazo.</b> Ela serve para a pessoa se reorganizar, com exceções quando a autonomia financeira não é possível.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><b>Até a pensão “vitalícia” feita em cartório pode ser revista.</b> Se as circunstâncias mudaram, ela pode ser revista ou até extinta.</li>
+        </ul>
+        <p class="src">STJ, Terceira Turma (agosto de 2026) e Informativo de Jurisprudência nº 905 (outubro de 2026). Cada caso depende de análise.</p>
+        <a class="btn gold" href="https://wa.me/5581982252497?text=Ol%C3%A1%2C%20Dr.%20Thiago%21%20Vim%20pelo%20site.%20Quero%20saber%20se%20as%20decis%C3%B5es%20recentes%20do%20STJ%20sobre%20pens%C3%A3o%20aliment%C3%ADcia%20se%20aplicam%20ao%20meu%20caso." target="_blank" rel="noopener">Quero saber se se aplica ao meu caso</a>
+      </div>
     </div>
   </section>
 
@@ -326,5 +366,10 @@ footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2Z"/></svg>
 </a>
 <script>{const f=document.getElementById('fab');const t=()=>f.classList.toggle('on',scrollY>420);addEventListener('scroll',t,{passive:true});t();}</script>
+<script>
+document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){
+var n=this.closest('.news');n.querySelectorAll('.tabs button').forEach(function(x){x.setAttribute('aria-selected',x===b)});
+n.querySelectorAll('.np').forEach(function(p){p.classList.toggle('on',p.id===b.getAttribute('aria-controls'))});});});
+</script>
 </body>
 </html>
