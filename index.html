@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thiago Barreto · Advogado</title>
+<meta name="description" content="Advogado com atuação em Direito Bancário, Consumidor, Cível, Família e Previdenciário. Atendimento online em todo o Brasil.">
+<meta name="theme-color" content="#111015">
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://thiagobarretoadv.netlify.app/">
+<meta property="og:title" content="Thiago Barreto | Advogado">
+<meta property="og:description" content="Bancário • Consumidor • Cível • Família • INSS. Atendimento online em todo o Brasil. Fale comigo pelo WhatsApp.">
+<meta property="og:image" content="https://thiagobarretoadv.netlify.app/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Montserrat:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* VOICE: formal, técnico, sóbrio — papelaria de escritório de advocacia
+   IDEA: o cartão da marca TB: preto profundo, monograma e filete dourado
+   PICTURE: logo TB no topo, foto em moldura dourada logo abaixo
+   COLOUR and TYPE: preto da marca #111015, ouro em degradê da logo, marfim; Montserrat (como a logo) + Inter
+   LAYOUT: coluna única, feita para abrir pelo celular a partir da bio */
+:root{color-scheme:light;--bg:#f7f3ea;--card:#fffdf8;--ink:#1b1915;--soft:#6a6356;
+--gold:#94722f;--gold2:#b89a62;--line:#e3d3ae;--wa:#1f8f55;
+--grad:linear-gradient(90deg,#e2cf9c,#b89a62 55%,#94774a)}
+.hero{color-scheme:dark;--bg:#111015;--card:#1b1a20;--ink:#f3efe6;--soft:#aaa498;--gold:#cbb27a;--line:#2e2c33;
+background:radial-gradient(120% 70% at 50% 0%,#1d1b22,#111015 70%);color:var(--ink)}
+.hero main{padding-bottom:36px}
+.content{padding-top:8px}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif;overflow-x:clip;min-height:100vh}
+.bar{height:6px;background:var(--grad)}
+main{max-width:480px;margin:0 auto;padding:34px 20px 40px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.logo{width:min(270px,78%);height:auto;display:block}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.photo{width:150px;height:150px;margin-top:28px;border-radius:50%;padding:3px;background:var(--grad);box-shadow:0 14px 34px -14px #000;animation:rise .9s ease-out both}
+.photo img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;border:3px solid var(--bg)}
+.oab{font:500 12px/1.4 Montserrat,sans-serif;letter-spacing:.08em;color:var(--gold);margin:16px 0 0}
+.lead{font-size:17px;margin:14px 0 4px;text-wrap:balance}
+.where{font-size:14px;color:var(--soft);margin:0}
+.links{width:100%;display:grid;gap:12px;margin-top:24px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:12px 18px;border-radius:12px;
+text-decoration:none;font-weight:600;font-size:16px;color:var(--ink);background:var(--card);border:1px solid var(--line);transition:transform .15s,border-color .15s}
+.btn:hover{transform:translateY(-1px);border-color:var(--gold)}
+.btn:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.btn svg{width:20px;height:20px;flex:none}
+.btn.main{background:var(--wa);border-color:var(--wa);color:#fff}
+.num{font-size:13px;color:var(--soft);margin:8px 0 0}
+section{width:100%;margin-top:34px;text-align:left}
+h2{font:600 15px/1.2 Montserrat,sans-serif;letter-spacing:.06em;color:var(--gold);text-align:center;margin:0 0 14px}
+h2::after{content:"";display:block;width:44px;height:2px;margin:10px auto 0;background:var(--grad)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 18px;box-shadow:0 6px 20px -14px rgba(60,45,15,.25)}
+.areas li{padding:13px 0;border-top:1px solid var(--line)}
+.areas li:first-child{border-top:0}
+ul,ol{list-style:none;margin:0;padding:0}
+.areas b,.steps b{display:block;font-weight:600}
+.areas span,.steps span{font-size:14px;color:var(--soft)}
+.steps{display:grid;gap:10px}
+.steps li{display:grid;grid-template-columns:40px 1fr;gap:12px;align-items:start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.steps i{font:700 15px/40px Montserrat,sans-serif;font-style:normal;width:40px;height:40px;border-radius:50%;text-align:center;color:#141210;background:var(--grad)}
+details{border-top:1px solid var(--line)}
+details:first-child{border-top:0}
+summary{cursor:pointer;list-style:none;padding:14px 26px 14px 0;font-weight:600;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:2px;top:12px;color:var(--gold);font-size:20px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:0 0 14px;font-size:15px;color:var(--soft)}
+.about{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 6px}
+.about p{margin:0 0 12px;font-size:15px}
+.about li{position:relative;padding:0 0 12px 18px;font-size:15px;color:var(--soft)}
+.about li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;transform:rotate(45deg);background:var(--grad)}
+.check{border:1px solid var(--gold2);border-radius:16px;padding:20px 18px;background:linear-gradient(160deg,#f3e7cc,var(--card) 65%);box-shadow:0 10px 30px -18px rgba(80,60,20,.35)}
+.check h3{font:700 19px/1.25 Montserrat,sans-serif;margin:0 0 6px;text-align:center;text-wrap:balance}
+.check>p{margin:0 0 14px;text-align:center;font-size:15px;color:var(--soft)}
+.check ol{counter-reset:c;margin:0 0 16px}
+.check ol li{counter-increment:c;position:relative;padding:8px 0 8px 34px;font-size:15px;border-top:1px solid var(--line)}
+.check ol li:first-child{border-top:0}
+.check ol li::before{content:counter(c);position:absolute;left:0;top:8px;width:24px;height:24px;border-radius:50%;background:var(--grad);color:#141210;font:700 13px/24px Montserrat,sans-serif;text-align:center}
+.btn.gold{background:var(--grad);border:0;color:#141210}
+.posts{display:grid;gap:10px}
+.posts a{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:56px;padding:12px 16px;border-radius:12px;background:var(--card);border:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:500;font-size:15px}
+.posts a:hover{border-color:var(--gold)}
+.posts a::after{content:"→";color:var(--gold);flex:none}
+.posts small{display:block;font-size:12px;color:var(--gold);font-weight:600;letter-spacing:.04em}
+.maxim{margin:22px 0 0;margin-inline:0;padding:16px 8px 0;border-top:1px solid var(--line);width:100%}
+.maxim q{display:block;font:italic 500 clamp(24px,6.4vw,30px)/1.15 "Cormorant Garamond",Georgia,serif;color:var(--gold);quotes:none;text-wrap:balance}
+.maxim span{display:block;margin-top:6px;font-size:14px;color:var(--soft)}
+.paper{display:block;background:var(--card);border:1px solid var(--line);border-left:4px solid var(--gold2);border-radius:14px;padding:18px;box-shadow:0 6px 20px -14px rgba(60,45,15,.25)}
+.paper small{display:block;font:600 12px/1.4 Montserrat,sans-serif;letter-spacing:.05em;color:var(--gold)}
+.paper h3{font:600 18px/1.3 Inter,sans-serif;margin:8px 0 6px;text-wrap:balance}
+.paper p{margin:0 0 6px;font-size:14px;color:var(--soft)}
+.paper .tags{margin:10px 0 14px;display:flex;flex-wrap:wrap;gap:6px}
+.paper .tags span{font-size:12px;padding:4px 10px;border-radius:99px;background:#f1e8d4;color:#5a4620}
+.faqh{font:600 13px/1.3 Montserrat,sans-serif;letter-spacing:.04em;color:var(--ink);margin:18px 0 8px;display:flex;align-items:center;gap:8px}
+.faqh::before{content:"";width:7px;height:7px;transform:rotate(45deg);background:var(--grad);flex:none}
+.orn{display:flex;align-items:center;gap:10px;width:100%;margin:34px 0 0;color:var(--gold2)}
+.orn::before,.orn::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold2))}
+.orn::after{background:linear-gradient(90deg,var(--gold2),transparent)}
+.orn img{width:30px;height:auto;opacity:.9}
+footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
+@keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.photo{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="hero">
+<div class="bar"></div>
+<main>
+  <h1 class="sr">Thiago Barreto, Advogado</h1>
+  <img class="logo" src="img/logo.png" alt="TB · Thiago Barreto Advogado" width="769" height="163">
+
+  <div class="photo"><img src="img/foto.jpg" alt="Thiago Barreto, advogado" width="520" height="520"></div>
+
+  <p class="oab">INSCRITO NA OAB/PE E OAB/SE</p>
+  <p class="lead">Direito Bancário, Consumidor, Cível, Família e Previdenciário.</p>
+  <p class="where">Atendimento online em todo o Brasil</p>
+  <blockquote class="maxim" lang="la"><q>Dormientibus non succurrit jus</q><span lang="pt-BR">O Direito não socorre aos que dormem.</span></blockquote>
+
+  <nav class="links" aria-label="Contatos">
+    <a class="btn main" href="https://wa.me/5581982252497?text=Ol%C3%A1%2C%20Dr.%20Thiago!%20Vim%20pelo%20Instagram%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2Z"/></svg>
+      Fale comigo no WhatsApp
+    </a>
+    <a class="btn" href="https://www.instagram.com/thiaggo_ol/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+      Instagram · @thiaggo_ol
+    </a>
+    <a class="btn" href="mailto:thiagobarretoconsultoriaadv@gmail.com">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+      Enviar e-mail
+    </a>
+  </nav>
+  <p class="num">WhatsApp: (81) 98225-2497<br>thiagobarretoconsultoriaadv@gmail.com</p>
+
+</main>
+</div>
+<main class="content">
+  <section aria-labelledby="t-sobre">
+    <h2 id="t-sobre">SOBRE</h2>
+    <div class="about">
+      <p>Advogado com atuação em Pernambuco e Sergipe e atendimento online para todo o Brasil, com foco na defesa de consumidores e aposentados lesados por instituições financeiras.</p>
+      <ul>
+        <li>Estágio e residência jurídica no Ministério Público de Pernambuco (MPPE)</li>
+        <li>Pós-graduação em Advocacia contra Bancos</li>
+        <li>Pós-graduação em Direito de Família e Sucessões</li>
+        <li>Pós-graduação em Juizados Especiais e da Fazenda Pública</li>
+        <li>Autor de artigo científico sobre os direitos das pessoas com Transtorno do Espectro Autista</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="t-check">
+    <div class="check">
+      <h3 id="t-check">Confira se você tem desconto indevido no INSS</h3>
+      <p>Leva poucos minutos e pode ser feito pelo celular.</p>
+      <ol>
+        <li>Acesse o site ou o aplicativo <b>Meu INSS</b> e entre com sua conta gov.br.</li>
+        <li>No campo de busca, procure por <b>"Extrato de Empréstimos"</b>.</li>
+        <li>Confira cada contrato: banco, valor e data. Algum que você não reconhece? Me chame no WhatsApp com o extrato.</li>
+      </ol>
+      <a class="btn gold" href="https://meu.inss.gov.br/" target="_blank" rel="noopener">Abrir o Meu INSS</a>
+    </div>
+  </section>
+
+  <section aria-labelledby="t-como">
+    <h2 id="t-como">COMO FUNCIONA</h2>
+    <ol class="steps">
+      <li><i>1</i><div><b>Primeiro contato</b><span>Você me chama no WhatsApp e conta brevemente o que aconteceu.</span></div></li>
+      <li><i>2</i><div><b>Envio de documentos</b><span>Extratos, contratos e documentos pessoais, tudo de forma digital.</span></div></li>
+      <li><i>3</i><div><b>Análise do caso</b><span>Avaliação técnica e orientação sobre o melhor caminho, judicial ou administrativo.</span></div></li>
+    </ol>
+  </section>
+
+  <div class="orn" aria-hidden="true"><img src="img/mono.png" alt=""></div>
+  <section aria-labelledby="t-areas">
+    <h2 id="t-areas">ÁREAS DE ATUAÇÃO</h2>
+    <ul class="box areas">
+      <li><b>Direito Bancário</b><span>Empréstimos e cartões consignados não contratados, descontos indevidos</span></li>
+      <li><b>Direito do Consumidor</b><span>Cobranças abusivas, repetição de indébito e danos morais</span></li>
+      <li><b>Direito Previdenciário</b><span>Benefícios do INSS, pensão por morte e revisões</span></li>
+      <li><b>Direito Civil</b><span>Contratos, indenizações, cobranças e responsabilidade civil</span></li>
+      <li><b>Direito de Família</b><span>Divórcio, pensão alimentícia, guarda, inventário e partilha</span></li>
+      <li><b>Perícia Criminal</b><span>Análise técnica de provas</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="t-posts">
+    <h2 id="t-posts">CONTEÚDOS EM DESTAQUE</h2>
+    <div class="posts">
+      <a href="https://www.instagram.com/p/DeK1n3nNesp/" target="_blank" rel="noopener"><span><small>DIREITO ELEITORAL E DO TRABALHO</small>Ameaçar demissão por causa do voto pode configurar assédio eleitoral</span></a>
+      <a href="https://www.instagram.com/p/DeQMbYFsVvD/" target="_blank" rel="noopener"><span><small>DIREITO DO TRABALHO</small>Liberdade contratual ou subordinação disfarçada?</span></a>
+      <a href="https://www.instagram.com/p/DeNwxr_MZIM/" target="_blank" rel="noopener"><span><small>EMPREENDEDORISMO</small>Atenção, MEI: o que você precisa saber</span></a>
+      <a href="https://www.instagram.com/p/DdxJ0CKt5ap/" target="_blank" rel="noopener"><span><small>ADVOCACIA</small>A advocacia como instrumento de proteção das liberdades</span></a>
+    </div>
+  </section>
+
+  <section aria-labelledby="t-artigo">
+    <h2 id="t-artigo">PRODUÇÃO ACADÊMICA</h2>
+    <article class="paper">
+      <small>ARTIGO CIENTÍFICO · 2023</small>
+      <h3>O Direito das Pessoas Portadoras do Transtorno do Espectro Autista</h3>
+      <p>Revista Eletrônica da Estácio Recife, v. 9, n. 2, Edição Especial de Direito.</p>
+      <p>Analisa a Lei nº 12.764/2012 e o Estatuto da Pessoa com Deficiência, a capacidade civil das pessoas com TEA e a necessidade de avaliações multidisciplinares.</p>
+      <div class="tags"><span>Capacidade civil</span><span>Lei nº 12.764/2012</span><span>TEA</span></div>
+      <a class="btn gold" href="https://reer.emnuvens.com.br/reer/article/view/751" target="_blank" rel="noopener">Ler o artigo</a>
+    </article>
+  </section>
+
+  <div class="orn" aria-hidden="true"><img src="img/mono.png" alt=""></div>
+  <section aria-labelledby="t-faq">
+    <h2 id="t-faq">DÚVIDAS FREQUENTES</h2>
+    <h3 class="faqh">Bancos e consignado</h3>
+    <div class="box">
+      <details><summary>Descobri um empréstimo que não fiz. O que faço?</summary>
+        <p>Guarde o extrato onde aparece o desconto e não assine nenhum acordo com o banco antes de uma análise. Com esses documentos é possível verificar o contrato e buscar a suspensão dos descontos e a devolução dos valores.</p></details>
+      <details><summary>O que é o cartão consignado (RMC ou RCC)?</summary>
+        <p>É um cartão de crédito com desconto direto no benefício. Muitos aposentados o contrataram achando que era um empréstimo comum, e a dívida quase não diminui. Quando faltou informação clara na contratação, é possível questionar o contrato.</p></details>
+      <details><summary>Posso receber de volta em dobro o que foi descontado?</summary>
+        <p>O Código de Defesa do Consumidor prevê a devolução em dobro do que foi cobrado indevidamente, salvo engano justificável. Cada caso é analisado individualmente.</p></details>
+      <details><summary>Caí em um golpe pelo Pix ou na conta. O banco responde?</summary>
+        <p>Em muitos casos, sim. Pela Súmula 479 do STJ, os bancos respondem por fraudes praticadas por terceiros dentro das suas operações. É importante registrar o ocorrido no banco e guardar os comprovantes.</p></details>
+      <details><summary>Já assinei um acordo com o banco. Ainda tenho direito?</summary>
+        <p>Depende do que foi assinado e de como foi feito. Vale enviar o documento para análise antes de concluir que não há mais o que fazer.</p></details>
+    </div>
+    <h3 class="faqh">INSS e benefícios</h3>
+    <div class="box">
+      <details><summary>O INSS negou ou cortou meu benefício. E agora?</summary>
+        <p>É possível recorrer, tanto no próprio INSS quanto na Justiça. A carta de indeferimento e o extrato do benefício são o ponto de partida.</p></details>
+      <details><summary>Existe prazo para buscar meus direitos?</summary>
+        <p>Sim. A lei fixa prazos para cada tipo de ação e, depois que eles passam, o direito pode se perder. Por isso, quanto antes o caso for analisado, melhor.</p></details>
+    </div>
+    <h3 class="faqh">Família</h3>
+    <div class="box">
+      <details><summary>Divórcio e inventário podem ser feitos em cartório?</summary>
+        <p>Em muitos casos, sim, quando há acordo entre as partes. É um caminho mais rápido que o processo judicial, e a análise do caso indica se ele é possível.</p></details>
+      <details><summary>Posso pedir revisão da pensão alimentícia?</summary>
+        <p>Sim. Se a situação financeira de quem paga ou as necessidades de quem recebe mudarem, a lei permite pedir o aumento, a redução ou a exoneração da pensão.</p></details>
+    </div>
+    <h3 class="faqh">Atendimento</h3>
+    <div class="box">
+      <details><summary>Preciso ir ao escritório?</summary>
+        <p>Não. O atendimento, o envio de documentos e o acompanhamento do processo podem ser feitos de forma online, para clientes de todo o Brasil.</p></details>
+      <details><summary>Quanto tempo demora um processo?</summary>
+        <p>Depende do tipo de ação e do tribunal. Causas de menor valor costumam tramitar nos Juizados Especiais, que tendem a ser mais rápidos. Você acompanha cada etapa.</p></details>
+      <details><summary>Como funcionam os honorários?</summary>
+        <p>Depois da análise do caso, você recebe uma proposta clara e por escrito, antes de qualquer contratação.</p></details>
+    </div>
+  </section>
+
+  <footer><img src="img/mono.png" alt="" width="36" style="display:block;margin:0 auto 10px;opacity:.85">Thiago Barreto · Advogado<br>Pernambuco · Sergipe · Atendimento online</footer>
+</main>
+<div class="bar"></div>
+</body>
+</html>
