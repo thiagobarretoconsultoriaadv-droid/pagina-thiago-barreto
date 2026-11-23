@@ -73,7 +73,7 @@ details p{margin:0 0 14px;font-size:15px;color:var(--soft)}
 .about{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 18px 6px}
 .about p{margin:0 0 12px;font-size:15px}
 .about li{position:relative;padding:0 0 12px 18px;font-size:15px;color:var(--soft)}
-.about li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;transform:rotate(45deg);background:var(--grad)}
+.about li{padding-left:30px}.about .ic4{position:absolute;left:0;top:.1em;width:20px;height:20px;color:var(--gold)}
 .check{border:1px solid var(--gold2);border-radius:16px;padding:20px 18px;background:linear-gradient(160deg,#f3e7cc,var(--card) 65%);box-shadow:0 10px 30px -18px rgba(80,60,20,.35)}
 .check h3{font:700 19px/1.25 Montserrat,sans-serif;margin:0 0 6px;text-align:center;text-wrap:balance}
 .check>p{margin:0 0 14px;text-align:center;font-size:15px;color:var(--soft)}
@@ -97,7 +97,7 @@ details p{margin:0 0 14px;font-size:15px;color:var(--soft)}
 .paper .tags{margin:10px 0 14px;display:flex;flex-wrap:wrap;gap:6px}
 .paper .tags span{font-size:12px;padding:4px 10px;border-radius:99px;background:#f1e8d4;color:#5a4620}
 .faqh{font:600 13px/1.3 Montserrat,sans-serif;letter-spacing:.04em;color:var(--ink);margin:18px 0 8px;display:flex;align-items:center;gap:8px}
-.faqh::before{content:"";width:7px;height:7px;transform:rotate(45deg);background:var(--grad);flex:none}
+.faqh .ic3{width:20px;height:20px;color:var(--gold);flex:none}
 .orn{display:flex;align-items:center;gap:10px;width:100%;margin:34px 0 0;color:var(--gold2)}
 .orn::before,.orn::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold2))}
 .orn::after{background:linear-gradient(90deg,var(--gold2),transparent)}
@@ -113,6 +113,15 @@ details p{margin:0 0 14px;font-size:15px;color:var(--soft)}
 .fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#1f8f55;color:#fff;box-shadow:0 10px 24px -8px rgba(0,0,0,.45),0 0 0 3px #cbb27a;opacity:0;transform:translateY(14px) scale(.9);pointer-events:none;transition:opacity .25s,transform .25s;z-index:10}
 .fab.on{opacity:1;transform:none;pointer-events:auto}
 .fab svg{width:28px;height:28px}
+.ic{width:24px;height:24px;flex:none;color:var(--gold);margin-top:2px}
+.ir{display:flex;gap:14px;align-items:flex-start}
+.ir p{margin:0}.ir p b{display:block;font-weight:600;margin-bottom:4px}.ir p span{font-size:14px;color:var(--soft)}
+.areas .ir .ic{width:38px;height:38px;padding:8px;border-radius:10px;background:#f4ead2;margin-top:0}
+.rights .ir .ic{width:40px;height:40px;padding:9px;border-radius:50%;background:#f4ead2;margin-top:0}
+.steps i{position:relative}.steps i .ic2{width:20px;height:20px;margin:10px;color:#141210}
+.steps i em{position:absolute;right:-4px;top:-4px;width:18px;height:18px;border-radius:50%;background:var(--card);border:1px solid var(--gold2);font:700 10px/16px Montserrat,sans-serif;font-style:normal;color:var(--gold)}
+.paper{position:relative}.paper .inf{position:absolute;right:16px;top:14px;width:64px;height:32px}
+.paper small{padding-right:72px}
 footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
 @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.fab{transition:none}.photo{animation:none}.btn{transition:none}}
@@ -162,11 +171,11 @@ footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
     <div class="about">
       <p>Advogado com atuação em Pernambuco e Sergipe e atendimento online para todo o Brasil, com foco na defesa de consumidores e aposentados lesados por instituições financeiras.</p>
       <ul>
-        <li>Estágio e residência jurídica no Ministério Público de Pernambuco (MPPE)</li>
-        <li>Pós-graduação em Advocacia contra Bancos</li>
-        <li>Pós-graduação em Direito de Família e Sucessões</li>
-        <li>Pós-graduação em Juizados Especiais e da Fazenda Pública</li>
-        <li>Autor de artigo científico sobre os direitos das pessoas com Transtorno do Espectro Autista</li>
+        <li><svg class="ic4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6M9 10h.01M15 10h.01"/></svg>Estágio e residência jurídica no Ministério Público de Pernambuco (MPPE)</li>
+        <li><svg class="ic4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5 2.5 9Z"/><path d="M6.5 11v4.5c1.5 1.4 3.5 2 5.5 2s4-.6 5.5-2V11M21.5 9v5"/></svg>Pós-graduação em Advocacia contra Bancos</li>
+        <li><svg class="ic4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5 2.5 9Z"/><path d="M6.5 11v4.5c1.5 1.4 3.5 2 5.5 2s4-.6 5.5-2V11M21.5 9v5"/></svg>Pós-graduação em Direito de Família e Sucessões</li>
+        <li><svg class="ic4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9 12 4.5 21.5 9 12 13.5 2.5 9Z"/><path d="M6.5 11v4.5c1.5 1.4 3.5 2 5.5 2s4-.6 5.5-2V11M21.5 9v5"/></svg>Pós-graduação em Juizados Especiais e da Fazenda Pública</li>
+        <li><svg class="ic4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15Z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/></svg>Autor de artigo científico sobre os direitos das pessoas com Transtorno do Espectro Autista</li>
       </ul>
     </div>
   </section>
@@ -187,18 +196,18 @@ footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
   <section aria-labelledby="t-dir">
     <h2 id="t-dir">DIREITOS QUE VOCÊ TALVEZ NÃO CONHEÇA</h2>
     <div class="rights">
-      <div><b>Sem autorização, sem desconto</b><span>Empréstimo no benefício só pode ser descontado se você realmente contratou. Desconto sem contrato válido é indevido.</span></div>
-      <div><b>Você pode bloquear novos empréstimos</b><span>Pelo Meu INSS é possível bloquear o benefício para empréstimos, o que dificulta contratações feitas sem o seu conhecimento.</span></div>
-      <div><b>O extrato é seu e é gratuito</b><span>O extrato de empréstimos mostra todos os contratos ligados ao seu benefício, e você pode consultá-lo quando quiser.</span></div>
+      <div class="ir"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4.5 6v6c0 4.5 3.2 7.8 7.5 9 4.3-1.2 7.5-4.5 7.5-9V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg><p><b>Sem autorização, sem desconto</b><span>Empréstimo no benefício só pode ser descontado se você realmente contratou. Desconto sem contrato válido é indevido.</span></p></div>
+      <div class="ir"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7.5a4 4 0 0 1 8 0V11"/></svg><p><b>Você pode bloquear novos empréstimos</b><span>Pelo Meu INSS é possível bloquear o benefício para empréstimos, o que dificulta contratações feitas sem o seu conhecimento.</span></p></div>
+      <div class="ir"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4.5" cy="6" r="1"/><circle cx="4.5" cy="12" r="1"/><circle cx="4.5" cy="18" r="1"/></svg><p><b>O extrato é seu e é gratuito</b><span>O extrato de empréstimos mostra todos os contratos ligados ao seu benefício, e você pode consultá-lo quando quiser.</span></p></div>
     </div>
   </section>
 
   <section aria-labelledby="t-como">
     <h2 id="t-como">COMO FUNCIONA</h2>
     <ol class="steps">
-      <li><i>1</i><div><b>Primeiro contato</b><span>Você me chama no WhatsApp e conta brevemente o que aconteceu.</span></div></li>
-      <li><i>2</i><div><b>Envio de documentos</b><span>Extratos, contratos e documentos pessoais, tudo de forma digital.</span></div></li>
-      <li><i>3</i><div><b>Análise do caso</b><span>Avaliação técnica e orientação sobre o melhor caminho, judicial ou administrativo.</span></div></li>
+      <li><i><svg class="ic2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12Z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></svg><em>1</em></i><div><b>Primeiro contato</b><span>Você me chama no WhatsApp e conta brevemente o que aconteceu.</span></div></li>
+      <li><i><svg class="ic2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg><em>2</em></i><div><b>Envio de documentos</b><span>Extratos, contratos e documentos pessoais, tudo de forma digital.</span></div></li>
+      <li><i><svg class="ic2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M7 21h10M5 7h14M5 7l-3 7a3.5 3.5 0 0 0 6 0L5 7ZM19 7l-3 7a3.5 3.5 0 0 0 6 0l-3-7Z"/></svg><em>3</em></i><div><b>Análise do caso</b><span>Avaliação técnica e orientação sobre o melhor caminho, judicial ou administrativo.</span></div></li>
     </ol>
   </section>
 
@@ -206,12 +215,12 @@ footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
   <section aria-labelledby="t-areas">
     <h2 id="t-areas">ÁREAS DE ATUAÇÃO</h2>
     <ul class="box areas">
-      <li><b>Direito Bancário</b><span>Empréstimos e cartões consignados não contratados, descontos indevidos</span></li>
-      <li><b>Direito do Consumidor</b><span>Cobranças abusivas, repetição de indébito e danos morais</span></li>
-      <li><b>Direito Previdenciário</b><span>Benefícios do INSS, pensão por morte e revisões</span></li>
-      <li><b>Direito Civil</b><span>Contratos, indenizações, cobranças e responsabilidade civil</span></li>
-      <li><b>Direito de Família</b><span>Divórcio, pensão alimentícia, guarda, inventário e partilha</span></li>
-      <li><b>Perícia Criminal</b><span>Análise técnica de provas</span></li>
+      <li class="ir"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M4 10h16M5 10v8M9.5 10v8M14.5 10v8M19 10v8M12 3l8 5H4l8-5Z"/></svg><div><b>Direito Bancário</b><span>Empréstimos e cartões consignados não contratados, descontos indevidos</span></div></li>
+      <li class="ir"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/><path d="M3 4h2.5l2.2 11h10.6l2-8H6.6"/></svg><div><b>Direito do Consumidor</b><span>Cobranças abusivas, repetição de indébito e danos morais</span></div></li>
+      <li class="ir"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z"/><path d="M8.5 12.5 11 15l4.5-5"/></svg><div><b>Direito Previdenciário</b><span>Benefícios do INSS, pensão por morte e revisões</span></div></li>
+      <li class="ir"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg><div><b>Direito Civil</b><span>Contratos, indenizações, cobranças e responsabilidade civil</span></div></li>
+      <li class="ir"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="7" r="2.6"/><circle cx="16.5" cy="8" r="2.1"/><path d="M3.5 20v-2.5A4.5 4.5 0 0 1 8 13a4.5 4.5 0 0 1 4.5 4.5V20M13.5 14.4a3.6 3.6 0 0 1 6.5 2.1V20"/></svg><div><b>Direito de Família</b><span>Divórcio, pensão alimentícia, guarda, inventário e partilha</span></div></li>
+      <li class="ir"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.4-4.4M11 8v6M8 11h6"/></svg><div><b>Perícia Criminal</b><span>Análise técnica de provas</span></div></li>
     </ul>
   </section>
 
@@ -227,7 +236,7 @@ footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
 
   <section aria-labelledby="t-artigo">
     <h2 id="t-artigo">PRODUÇÃO ACADÊMICA</h2>
-    <article class="paper">
+    <article class="paper"><svg class="inf" viewBox="0 0 120 60" aria-hidden="true"><defs><linearGradient id="rb" x1="0" x2="1"><stop offset="0" stop-color="#e5484d"/><stop offset=".2" stop-color="#f76b15"/><stop offset=".38" stop-color="#ffc53d"/><stop offset=".56" stop-color="#46a758"/><stop offset=".76" stop-color="#3e63dd"/><stop offset="1" stop-color="#8e4ec6"/></linearGradient></defs><path d="M60 30c-10-13-20-19-30-19a19 19 0 0 0 0 38c10 0 20-6 30-19s20-19 30-19a19 19 0 0 1 0 38c-10 0-20-6-30-19Z" fill="none" stroke="url(#rb)" stroke-width="9" stroke-linecap="round"/></svg>
       <small>ARTIGO CIENTÍFICO · 2023</small>
       <h3>O Direito das Pessoas Portadoras do Transtorno do Espectro Autista</h3>
       <p>Revista Eletrônica da Estácio Recife, v. 9, n. 2, Edição Especial de Direito.</p>
@@ -240,7 +249,7 @@ footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
   <div class="orn" aria-hidden="true"><img src="img/mono.png" alt=""></div>
   <section aria-labelledby="t-faq">
     <h2 id="t-faq">DÚVIDAS FREQUENTES</h2>
-    <h3 class="faqh">Bancos e consignado</h3>
+    <h3 class="faqh"><svg class="ic3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.5v5M18 9.5v5"/></svg>Bancos e consignado</h3>
     <div class="box">
       <details><summary>Descobri um empréstimo que não fiz. O que faço?</summary>
         <p>Guarde o extrato onde aparece o desconto e não assine nenhum acordo com o banco antes de uma análise. Com esses documentos é possível verificar o contrato e buscar a suspensão dos descontos e a devolução dos valores.</p></details>
@@ -253,21 +262,21 @@ footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
       <details><summary>Já assinei um acordo com o banco. Ainda tenho direito?</summary>
         <p>Depende do que foi assinado e de como foi feito. Vale enviar o documento para análise antes de concluir que não há mais o que fazer.</p></details>
     </div>
-    <h3 class="faqh">INSS e benefícios</h3>
+    <h3 class="faqh"><svg class="ic3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z"/><path d="M8.5 12.5 11 15l4.5-5"/></svg>INSS e benefícios</h3>
     <div class="box">
       <details><summary>O INSS negou ou cortou meu benefício. E agora?</summary>
         <p>É possível recorrer, tanto no próprio INSS quanto na Justiça. A carta de indeferimento e o extrato do benefício são o ponto de partida.</p></details>
       <details><summary>Existe prazo para buscar meus direitos?</summary>
         <p>Sim. A lei fixa prazos para cada tipo de ação e, depois que eles passam, o direito pode se perder. Por isso, quanto antes o caso for analisado, melhor.</p></details>
     </div>
-    <h3 class="faqh">Família</h3>
+    <h3 class="faqh"><svg class="ic3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10Z"/></svg>Família</h3>
     <div class="box">
       <details><summary>Divórcio e inventário podem ser feitos em cartório?</summary>
         <p>Em muitos casos, sim, quando há acordo entre as partes. É um caminho mais rápido que o processo judicial, e a análise do caso indica se ele é possível.</p></details>
       <details><summary>Posso pedir revisão da pensão alimentícia?</summary>
         <p>Sim. Se a situação financeira de quem paga ou as necessidades de quem recebe mudarem, a lei permite pedir o aumento, a redução ou a exoneração da pensão.</p></details>
     </div>
-    <h3 class="faqh">Atendimento</h3>
+    <h3 class="faqh"><svg class="ic3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>Atendimento</h3>
     <div class="box">
       <details><summary>Preciso ir ao escritório?</summary>
         <p>Não. O atendimento, o envio de documentos e o acompanhamento do processo podem ser feitos de forma online, para clientes de todo o Brasil.</p></details>
