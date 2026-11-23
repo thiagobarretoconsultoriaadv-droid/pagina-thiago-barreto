@@ -102,9 +102,20 @@ details p{margin:0 0 14px;font-size:15px;color:var(--soft)}
 .orn::before,.orn::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold2))}
 .orn::after{background:linear-gradient(90deg,var(--gold2),transparent)}
 .orn img{width:30px;height:auto;opacity:.9}
+.pick{font-size:13px;color:var(--soft);margin:16px 0 8px}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;width:100%}
+.chips a{flex:1 1 auto;min-height:44px;display:flex;align-items:center;justify-content:center;padding:8px 14px;border-radius:99px;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font:600 13px/1.2 Montserrat,sans-serif;transition:background .15s,color .15s}
+.chips a:hover,.chips a:focus-visible{background:var(--gold);color:#141210;outline:none}
+.rights{display:grid;gap:10px}
+.rights div{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--gold2);border-radius:14px;padding:16px 18px;box-shadow:0 6px 20px -14px rgba(60,45,15,.25)}
+.rights b{display:block;font-weight:600;margin-bottom:4px}
+.rights span{font-size:14px;color:var(--soft)}
+.fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#1f8f55;color:#fff;box-shadow:0 10px 24px -8px rgba(0,0,0,.45),0 0 0 3px #cbb27a;opacity:0;transform:translateY(14px) scale(.9);pointer-events:none;transition:opacity .25s,transform .25s;z-index:10}
+.fab.on{opacity:1;transform:none;pointer-events:auto}
+.fab svg{width:28px;height:28px}
 footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
 @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-@media(prefers-reduced-motion:reduce){.photo{animation:none}.btn{transition:none}}
+@media(prefers-reduced-motion:reduce){.fab{transition:none}.photo{animation:none}.btn{transition:none}}
 </style>
 </head>
 <body>
@@ -135,6 +146,12 @@ footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
       Enviar e-mail
     </a>
   </nav>
+  <p class="pick">Ou fale direto sobre o seu assunto:</p>
+  <div class="chips">
+    <a href="https://wa.me/5581982252497?text=Ol%C3%A1%2C%20Dr.%20Thiago%21%20Vim%20pelo%20Instagram.%20Tenho%20um%20desconto%20ou%20empr%C3%A9stimo%20que%20n%C3%A3o%20reconhe%C3%A7o%20e%20gostaria%20de%20uma%20an%C3%A1lise." target="_blank" rel="noopener">Descontos e empréstimos</a>
+    <a href="https://wa.me/5581982252497?text=Ol%C3%A1%2C%20Dr.%20Thiago%21%20Vim%20pelo%20Instagram.%20Preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20um%20benef%C3%ADcio%20do%20INSS." target="_blank" rel="noopener">INSS e benefícios</a>
+    <a href="https://wa.me/5581982252497?text=Ol%C3%A1%2C%20Dr.%20Thiago%21%20Vim%20pelo%20Instagram.%20Gostaria%20de%20orienta%C3%A7%C3%A3o%20em%20uma%20quest%C3%A3o%20de%20fam%C3%ADlia%20ou%20c%C3%ADvel." target="_blank" rel="noopener">Família e Cível</a>
+  </div>
   <p class="num">WhatsApp: (81) 98225-2497<br>thiagobarretoconsultoriaadv@gmail.com</p>
 
 </main>
@@ -164,6 +181,15 @@ footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
         <li>Confira cada contrato: banco, valor e data. Algum que você não reconhece? Me chame no WhatsApp com o extrato.</li>
       </ol>
       <a class="btn gold" href="https://meu.inss.gov.br/" target="_blank" rel="noopener">Abrir o Meu INSS</a>
+    </div>
+  </section>
+
+  <section aria-labelledby="t-dir">
+    <h2 id="t-dir">DIREITOS QUE VOCÊ TALVEZ NÃO CONHEÇA</h2>
+    <div class="rights">
+      <div><b>Sem autorização, sem desconto</b><span>Empréstimo no benefício só pode ser descontado se você realmente contratou. Desconto sem contrato válido é indevido.</span></div>
+      <div><b>Você pode bloquear novos empréstimos</b><span>Pelo Meu INSS é possível bloquear o benefício para empréstimos, o que dificulta contratações feitas sem o seu conhecimento.</span></div>
+      <div><b>O extrato é seu e é gratuito</b><span>O extrato de empréstimos mostra todos os contratos ligados ao seu benefício, e você pode consultá-lo quando quiser.</span></div>
     </div>
   </section>
 
@@ -255,5 +281,9 @@ footer{margin-top:34px;font-size:12px;color:var(--soft);line-height:1.6}
   <footer><img src="img/mono.png" alt="" width="36" style="display:block;margin:0 auto 10px;opacity:.85">Thiago Barreto · Advogado<br>Pernambuco · Sergipe · Atendimento online</footer>
 </main>
 <div class="bar"></div>
+<a class="fab" id="fab" href="https://wa.me/5581982252497?text=Ol%C3%A1%2C%20Dr.%20Thiago%21%20Vim%20pelo%20Instagram%20e%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.8-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.2Z"/></svg>
+</a>
+<script>{const f=document.getElementById('fab');const t=()=>f.classList.toggle('on',scrollY>420);addEventListener('scroll',t,{passive:true});t();}</script>
 </body>
 </html>
