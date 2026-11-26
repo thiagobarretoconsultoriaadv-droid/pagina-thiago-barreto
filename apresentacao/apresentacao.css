@@ -1,0 +1,118 @@
+@page{size:1080px 1350px;margin:0}
+:root{--bg:#f7f3ea;--card:#fffdf8;--ink:#1b1915;--soft:#6a6356;--gold:#94722f;--gold2:#b89a62;--gold3:#dcc79a;--line:#e3d3ae;--dark:#121110}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font:22px/1.5 Inter,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:1080px;height:1350px;position:relative;overflow:hidden;background:var(--bg);padding:90px 84px 110px;page-break-after:always;break-after:page}
+.page::before{content:"";position:absolute;inset:28px;border:1.5px solid var(--line);border-radius:6px;pointer-events:none}
+h1,h2,h3{font-family:Montserrat,sans-serif;margin:0;line-height:1.15}
+h2{font-size:50px;font-weight:700;letter-spacing:-.01em}
+h2 em{font-style:normal;color:#a8823c}
+h1 em{font-style:normal;color:#d4b87a}
+h3{font-size:25px;font-weight:700}
+.center{text-align:center}
+.eyebrow{font:600 17px/1 Montserrat,sans-serif;letter-spacing:.24em;color:var(--gold);margin-bottom:18px}
+.rule{width:76px;height:3px;background:linear-gradient(90deg,var(--gold2),var(--gold));margin:26px 0 30px;border-radius:2px}
+.rule.c{margin:26px auto 44px}
+.lead{font-size:26px;margin:0 0 18px}
+.soft{color:var(--soft);margin:0;font-size:23px}
+.ic{width:64px;height:64px;border-radius:50%;background:#f1e5c8;color:var(--gold);display:inline-flex;align-items:center;justify-content:center;flex:none}
+.ic svg{width:32px;height:32px}
+.ic.big{width:84px;height:84px}.ic.big svg{width:42px;height:42px}
+.ft{position:absolute;left:84px;right:84px;bottom:52px;display:flex;justify-content:space-between;font:600 13px Montserrat,sans-serif;letter-spacing:.2em;color:var(--soft)}
+
+/* capa */
+.capa{background:var(--dark);padding:0;color:#f3ecdd}
+.capa::before{border-color:rgba(184,154,98,.45);z-index:3}
+.capa-foto{position:absolute;right:0;top:0;bottom:0;width:60%}
+.capa-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.capa-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--dark) 0%,rgba(18,17,16,.75) 22%,rgba(18,17,16,0) 55%),linear-gradient(0deg,var(--dark) 0%,rgba(18,17,16,0) 30%)}
+.capa-txt{position:absolute;left:84px;top:110px;width:470px;z-index:2}
+.capa .logo{width:330px;display:block;margin-bottom:170px}
+.tag{font:600 17px Montserrat,sans-serif;letter-spacing:.3em;color:var(--gold3);margin-bottom:26px}
+.capa h1{font-size:60px;font-weight:700;color:#fff;margin-bottom:30px}
+.capa p{font-size:22px;color:#cfc4ad;margin:0 0 40px;max-width:470px}
+.pill{display:inline-flex;align-items:center;gap:12px;border:1.5px solid var(--gold2);color:var(--gold3);border-radius:999px;padding:14px 24px;font:600 18px Montserrat,sans-serif}
+.pill svg{width:24px;height:24px}
+.capa-ft{position:absolute;left:84px;bottom:58px;z-index:2;font:600 13px Montserrat,sans-serif;letter-spacing:.2em;color:#9d927c}
+
+/* sobre */
+.sobre{display:grid;grid-template-columns:400px 1fr;gap:56px;align-items:center}
+.foto-sobre{position:relative;padding:8px;border:1.5px solid var(--gold2);border-radius:999px 999px 14px 14px;background:var(--card)}
+.foto-sobre img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 18%;border-radius:999px 999px 8px 8px}
+.creds{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+.creds div{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--gold2);border-radius:14px;padding:30px 22px;display:flex;flex-direction:column;gap:6px}
+.creds .ic{width:52px;height:52px;margin-bottom:8px}.creds .ic svg{width:26px;height:26px}
+.creds b{font:700 14px Montserrat,sans-serif;letter-spacing:.14em;color:var(--gold);text-transform:uppercase}
+.creds span{font-size:22px;line-height:1.35}
+
+/* areas */
+.areas{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.area{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--gold2);border-radius:16px;padding:32px 30px}
+.area h3{margin:18px 0 16px;font-size:27px}
+.area ul{list-style:none;margin:0;padding:0}
+.area li{display:flex;gap:12px;align-items:flex-start;font-size:22px;line-height:1.32;margin-bottom:12px}
+.area li svg{width:24px;height:24px;color:var(--gold);flex:none;margin-top:1px}
+
+/* passos */
+.passos{list-style:none;margin:0;padding:0;position:relative}
+.passos::before{content:"";position:absolute;left:31px;top:40px;bottom:60px;width:2px;background:linear-gradient(var(--gold2),var(--line))}
+.passos li{display:flex;gap:30px;align-items:flex-start;margin-bottom:22px;position:relative}
+.passos .ic{box-shadow:0 0 0 8px var(--bg);border:1.5px solid var(--gold2)}
+.passos .n{font:700 15px Montserrat,sans-serif;letter-spacing:.18em;color:var(--gold)}
+.passos h3{margin:4px 0 6px;font-size:27px}
+.passos p{margin:0;color:var(--soft);font-size:22px}
+
+/* valores */
+.consulta{background:var(--dark);color:#f3ecdd;border-radius:22px;padding:44px 46px;position:relative;border:1.5px solid rgba(184,154,98,.5)}
+.c-l{display:flex;gap:26px;align-items:flex-start;max-width:560px}
+.c-l small{font:600 15px Montserrat,sans-serif;letter-spacing:.22em;color:var(--gold3)}
+.c-l h3{color:#fff;font-size:30px;margin:8px 0 10px}
+.c-l p{margin:0;color:#cfc4ad;font-size:22px}
+.consulta .ic{background:rgba(220,199,154,.14);color:var(--gold3)}
+.preco{position:absolute;right:46px;top:50px;font:700 92px/1 Montserrat,sans-serif;color:#dcc08a}
+.preco span{font-size:34px;vertical-align:top;margin-right:6px;line-height:1.6}
+.preco sup{font-size:36px;vertical-align:top;line-height:1.5}
+.selo{margin-top:32px;display:flex;gap:14px;align-items:center;background:rgba(220,199,154,.12);border:1px solid rgba(220,199,154,.35);border-radius:12px;padding:18px 22px;font-size:22px;color:#efe5cf}
+.selo svg{width:28px;height:28px;color:var(--gold3);flex:none}
+.selo b{color:#fff}
+.vgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:30px}
+.vcard{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--gold2);border-radius:16px;padding:32px 24px}
+.vcard h3{font-size:22px;margin:18px 0 10px}
+.vcard p{margin:0;font-size:20px;color:var(--soft);line-height:1.45}
+
+/* politica + contato */
+.pol{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.pol div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 26px;display:grid;grid-template-columns:64px 1fr;column-gap:20px;align-items:start}
+.pol .ic{grid-row:span 2}
+.pol h3{font-size:24px;margin:4px 0 6px}
+.pol p{margin:0;font-size:20px;color:var(--soft);line-height:1.4}
+.contato{margin-top:34px;background:var(--dark);border-radius:22px;display:grid;grid-template-columns:330px 1fr;overflow:hidden;border:1.5px solid rgba(184,154,98,.5);color:#f3ecdd}
+.ct-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 15%;display:block}
+.ct-txt{padding:36px 40px}
+.ct-txt .logo{width:250px;display:block;margin-bottom:18px}
+.ct-call{font:700 26px Montserrat,sans-serif;color:#fff;margin:0 0 18px}
+.ct-l{display:flex;align-items:center;gap:14px;font-size:21px;margin-bottom:10px;color:#e9dfc8}
+.ct-l svg{width:26px;height:26px;color:var(--gold3);flex:none}
+.qrs{display:flex;gap:22px;margin-top:20px}
+.qrs figure{margin:0;text-align:center}
+.qrs img{width:118px;height:118px;border-radius:8px;border:2px solid var(--gold2);display:block}
+.qrs figcaption{font:600 13px Montserrat,sans-serif;letter-spacing:.16em;color:var(--gold3);margin-top:8px;text-transform:uppercase}
+
+a{color:inherit;text-decoration:none}
+a.area{display:block;color:var(--ink)}
+.lnk{display:inline-block;margin-top:14px;font:600 17px Montserrat,sans-serif;color:var(--gold);letter-spacing:.02em;border-bottom:1.5px solid var(--line);padding-bottom:2px}
+.area .lnk{margin-top:6px}
+.agendar{display:inline-flex;align-items:center;gap:12px;margin-top:28px;background:linear-gradient(90deg,#d9bf86,#b08a45);color:#121110;font:700 21px Montserrat,sans-serif;padding:16px 30px;border-radius:999px}
+.agendar svg{width:26px;height:26px}
+.selo{margin-top:20px}
+.toque{margin:-8px 0 16px;font:600 13px Montserrat,sans-serif;letter-spacing:.16em;color:var(--gold3);text-transform:uppercase}
+
+.recebe{list-style:none;margin:28px 0 0;padding:26px 0 0;border-top:1px solid rgba(220,199,154,.25);display:grid;gap:14px}
+.recebe li{display:flex;gap:14px;align-items:flex-start;font-size:22px;color:#efe5cf;line-height:1.35}
+.recebe svg{width:28px;height:28px;color:var(--gold3);flex:none}
+
+.consulta.sv{padding:38px 44px}
+.sv .c-l{max-width:none}
+.sv .recebe{margin-top:24px;padding-top:22px;gap:10px}
+.sv .agendar{margin-top:24px}
